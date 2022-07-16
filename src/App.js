@@ -1,6 +1,7 @@
 
 import axios from 'axios'
 import React, { useEffect, useState } from 'react';
+import Viewperson from './componentes/ViewPerson';
 
 function App() {
   const [people, setPeople] = useState([])
@@ -53,7 +54,9 @@ function App() {
         onChange={handletelefonoChange}
         />
         <button type="submit">save</button>
-      </form>   
+      </form>  
+
+      <Viewperson lista = {people}/> 
     </div>
   );
 }
